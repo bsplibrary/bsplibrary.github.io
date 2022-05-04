@@ -1,0 +1,39 @@
+Body {
+	width: 150%;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: #FBA2A2;
+}
+
+Header #LogoFloridablanca img{
+	height: 16vh;
+	Float: left;
+}
+
+#Titulo{
+	padding:10px;
+	width:40%;
+}
+
+#Libro{
+	height: 10vh;
+	text-align:center;
+	margin:auto; 
+	padding:20px;
+	width:50%;
+}
+
+#Libro img{
+width: 70%;
+}
+
+#Disponible{
+width:20%;
+border:1px dotted #17202A;
+padding:1px;	
+}
+
+Footer{
+	height: 10vh;
+	width:20%;
+}

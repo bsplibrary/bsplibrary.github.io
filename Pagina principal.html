@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Biblioteca Floridablanca</title>
+  <Link href="CSS/Estilo.css" rel="stylesheet" >
+  <script src="jquery.txt"></script>
+  <style>
+  .resaltar{background-color:#FF0;}
+  </style>
+  <meta charset="UTF-8"/>
+  </head>
+  
+  <body>
+  <header>
+	<div id="LogoFloridablanca">
+     <img src="https://www.redacademica.edu.co/sites/default/files/2021-11/Colegio%20Floridablanca%20%28IED%29.png"  alt="Logo Floridablanca"></a>
+	</div>
+  <header>
+  </body>
+  
+  <script type='text/javascript' >
+    $.expr[':'].icontains = function(obj, index, meta, stack){
+    return (obj.textContent || obj.innerText || jQuery(obj).text() || '').toLowerCase().indexOf(meta[3].toLowerCase()) >= 0;
+    };
+    $(document).ready(function(){  
+        $('#buscador').keyup(function(){
+                     buscar = $(this).val();
+                     $('#lista li').removeClass('resaltar');
+                            if(jQuery.trim(buscar) != ''){
+                               $("#lista li:icontains('" + buscar + "')").addClass('resaltar');
+                            }
+            });
+    });  
+ </script>
+
+  <section id="Titulo">
+	<h1> BsP Library </h1>
+  </section>
+  
+  <section id="TituloB">
+	<h2> Busca El Titulo De Su Libro Aqui </h2>
+  </section>
+ 
+  Buscar  » <input name="buscador" id="buscador" type="text" />  
+
+  <ul id="lista"> 
+    <li><a href="bsplibrary\public_html\MalEducada.html">Mal Educada</a></li>
+    <li><a href="D:\BD\LaExtrañaEnMi.html">La Extraña en Mi</a></li>
+  </ul>
+
+  <hr>
+  <footer>
+  <p> BsP Library - 2022 </p>
+  </html>
